@@ -3,7 +3,11 @@ body {
 }
 
 .container {
-  width: 89%;
+  width: 100%;
+
+  &.main {
+    padding: 0;
+  }
 }
 
 .cursor-default {
