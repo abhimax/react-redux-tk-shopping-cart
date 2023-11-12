@@ -1,5 +1,5 @@
-import productList from '../data/productList.json'
-import '../styles/cart.scss'
+import productList from "../data/productList.json";
+import "../styles/cart.scss";
 
 const Cart = () => {
   return (
@@ -31,7 +31,7 @@ const Cart = () => {
         <p>You have not added any item to your cart.</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Cart
+export default Cart;
