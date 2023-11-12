@@ -9,11 +9,13 @@ const Home = () => {
           return (
             <div className="wrapper col-md-4" key={product.id}>
               <div className="card">
-                <img
-                  className="card-img-top center-block"
-                  src={product.imageUrl}
-                  alt="Card cap"
-                />
+                <div
+                  width
+                  and
+                  height
+                  className="image-wrapper"
+                  style={{ backgroundImage: `url(${product.imageUrl})` }}
+                ></div>
                 <div className="card-body text-center">
                   <h5 className="card-title">{product.name}</h5>
                   <p className="card-text">${product.price}</p>
