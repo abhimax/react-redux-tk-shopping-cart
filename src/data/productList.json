@@ -1,0 +1,88 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Elegant Evening Dress",
+      "detail": "A stunning evening dress for special occasions",
+      "price": 149,
+      "imageUrl": "https://images.unsplash.com/photo-1562964568-192c14d85b6a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "2",
+      "name": "Classic Diamond Necklace",
+      "detail": "A timeless diamond necklace that adds a touch of luxury",
+      "price": 299,
+      "imageUrl": "https://images.unsplash.com/photo-1676120963358-be514060350b?q=80&w=1260&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "3",
+      "name": "Chic Leather Handbag",
+      "detail": "A chic leather handbag for a stylish look",
+      "price": 129,
+      "imageUrl": "https://images.unsplash.com/photo-1591348278863-a8fb3887e2aa?q=80&w=1417&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "4",
+      "name": "Bohemian Maxi Skirt",
+      "detail": "A bohemian-style maxi skirt for a relaxed and trendy outfit",
+      "price": 79,
+      "imageUrl": "https://images.unsplash.com/photo-1646054224885-f978f5798312?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "5",
+      "name": "Elegant Pearl Earrings",
+      "detail": "Elegant pearl earrings to complement any outfit",
+      "price": 89,
+      "imageUrl": "https://images.unsplash.com/photo-1615197419794-52a6f5da9df0?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "6",
+      "name": "Stylish Leather Jacket",
+      "detail": "A stylish leather jacket for a cool and edgy look",
+      "price": 199,
+      "imageUrl": "https://images.unsplash.com/photo-1521223890158-f9f7c3d5d504?q=80&w=1492&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "7",
+      "name": "Vintage Charm Bracelet",
+      "detail": "A vintage charm bracelet with intricate details",
+      "price": 69,
+      "imageUrl": "https://images.unsplash.com/photo-1508022909583-69228d7b2f8f?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "8",
+      "name": "Trendy Sunglasses",
+      "detail": "Trendy sunglasses for a fashionable and UV-protected look",
+      "price": 49,
+      "imageUrl": "https://images.unsplash.com/photo-1577803645773-f96470509666?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "9",
+      "name": "Boho Crossbody Bag",
+      "detail": "A boho-inspired crossbody bag for a carefree style",
+      "price": 109,
+      "imageUrl": "https://images.unsplash.com/photo-1667411424594-672f7a3df708?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "10",
+      "name": "Casual Denim Jeans",
+      "detail": "Comfortable and casual denim jeans for everyday wear",
+      "price": 59,
+      "imageUrl": "https://plus.unsplash.com/premium_photo-1674828600712-7d0caab39109?q=80&w=1416&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "11",
+      "name": "Crystal Drop Necklace",
+      "detail": "A crystal drop necklace that adds a touch of glamour",
+      "price": 119,
+      "imageUrl": "https://images.unsplash.com/photo-1652941170716-6bdc53ee25cf?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "12",
+      "name": "Sophisticated Tote Bag",
+      "detail": "A sophisticated tote bag for a polished and organized look",
+      "price": 149,
+      "imageUrl": "https://images.unsplash.com/photo-1548863227-3af567fc3b27?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  ]
+}
