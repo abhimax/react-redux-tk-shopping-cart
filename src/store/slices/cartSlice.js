@@ -7,10 +7,21 @@ const cartSlice = createSlice({
   },
   reducers: {
     addToCart: (state, action) => {
+      console.log(
+        "cartProductID: ",
+        state.cartProductID,
+        "action.payload: ",
+        action.payload
+      );
       state.cartProductID = [action.payload, ...state.cartProductID];
     },
     removeFromCart: (state, action) => {
-      const indexOfId = state.cartProductID.indexOf(action.payload);
+      console.log(
+        "cartProductID: ",
+        state.cartProductID,
+        "action.payload: ",
+        action.payload
+      );
       state.cartProductID.splice(indexOfId, 1);
     },
     clearAllItems: (state) => {
@@ -18,3 +29,5 @@ const cartSlice = createSlice({
     },
   },
 });
+const { actions: cartActions } = cartSlice;
+export { cartActions, cartSlice as default };
