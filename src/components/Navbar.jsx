@@ -1,4 +1,3 @@
-//import { NavLink } from 'react-router-dom'
 import { NavLink } from "react-router-dom";
 import "../styles/navbar.scss";
 
@@ -6,7 +5,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <NavLink to="/" end>
-        <i className="bi bi-shop-window" />
+        <i className="bi bi-shop-window">
+          <span className="logo-text">Abhiman's OLO</span>
+        </i>
       </NavLink>
 
       <NavLink

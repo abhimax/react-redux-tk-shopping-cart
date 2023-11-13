@@ -1,5 +1,6 @@
 import productList from "../data/productList.json";
 import "../styles/home.scss";
+import Card from "./Card";
 
 const Home = () => {
   return (
@@ -7,22 +8,13 @@ const Home = () => {
       <div className="row">
         {productList.products.map((product) => {
           return (
-            <div className="wrapper col-md-4" key={product.id}>
-              <div className="card">
-                <div
-                  width
-                  and
-                  height
-                  className="image-wrapper"
-                  style={{ backgroundImage: `url(${product.imageUrl})` }}
-                ></div>
-                <div className="card-body text-center">
-                  <h5 className="card-title">{product.name}</h5>
-                  <p className="card-text">${product.price}</p>
-                  <button className="btn btn-primary">Add to cart</button>
-                </div>
-              </div>
-            </div>
+            <Card
+              key={product.id}
+              id={product.id}
+              name={product.name}
+              price={product.price}
+              imageUrl={product.imageUrl}
+            />
           );
         })}
       </div>
