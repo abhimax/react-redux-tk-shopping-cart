@@ -3,29 +3,30 @@ import { createSlice } from "@reduxjs/toolkit";
 const cartSlice = createSlice({
   name: "cart",
   initialState: {
-    cartProductID: [],
+    cartProductIDs: [],
   },
   reducers: {
     addToCart: (state, action) => {
       console.log(
-        "cartProductID: ",
-        state.cartProductID,
+        "cartProductIDs: ",
+        state.cartProductIDs,
         "action.payload: ",
         action.payload
       );
-      state.cartProductID = [action.payload, ...state.cartProductID];
+      state.cartProductIDs = [action.payload, ...state.cartProductIDs];
     },
     removeFromCart: (state, action) => {
       console.log(
-        "cartProductID: ",
-        state.cartProductID,
+        "cartProductIDs: ",
+        state.cartProductIDs,
         "action.payload: ",
         action.payload
       );
-      state.cartProductID.splice(indexOfId, 1);
+      const indexOfId = state.cartProductIDs.indexOf(action.payload);
+      state.cartProductIDs.splice(indexOfId, 1);
     },
     clearAllItems: (state) => {
-      state.cartProductID = [];
+      state.cartProductIDs = [];
     },
   },
 });

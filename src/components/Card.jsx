@@ -1,8 +1,11 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { cartActions } from "../store/slices/cartSlice";
 
 const Card = ({ id, name, price, imageUrl }) => {
   const dispatch = useDispatch();
+
+  const { cartProductIDs } = useSelector((state) => state.cart);
+  console.log(cartProductIDs);
   const handleAddToCart = (id) => {
     dispatch(cartActions.addToCart(id));
     console.log("ADD");
@@ -21,18 +24,22 @@ const Card = ({ id, name, price, imageUrl }) => {
         <div className="card-body text-center">
           <h5 className="card-title">{name}</h5>
           <p className="card-text">${price}</p>
-          <button
-            className="btn btn-primary"
-            onClick={() => handleAddToCart(id)}
-          >
-            Add to cart
-          </button>
-          <button
-            className="btn btn-secondary"
-            onClick={() => handleRemoveFromCart(id)}
-          >
-            Remove From cart
-          </button>
+          {!cartProductIDs.includes(id) && (
+            <button
+              className="btn btn-primary"
+              onClick={() => handleAddToCart(id)}
+            >
+              Add to cart
+            </button>
+          )}
+          {cartProductIDs.includes(id) && (
+            <button
+              className="btn btn-secondary"
+              onClick={() => handleRemoveFromCart(id)}
+            >
+              Remove From cart
+            </button>
+          )}
         </div>
       </div>
     </div>
