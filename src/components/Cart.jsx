@@ -14,6 +14,9 @@ const Cart = () => {
   const handleRemoveCard = (id) => {
     dispatch(cartActions.removeFromCart(id));
   };
+  const handleCheckout = () => {
+    dispatch(cartActions.clearAllItems());
+  };
   console.log("selectedProducts", selectedProducts);
   return (
     <div className="cart">
@@ -42,7 +45,9 @@ const Cart = () => {
           ))}
 
           <footer className="text-center">
-            <button className="btn btn-primary">CHECKOUT</button>
+            <button className="btn btn-primary" onClick={handleCheckout}>
+              CHECKOUT
+            </button>
           </footer>
         </div>
       ) : (
