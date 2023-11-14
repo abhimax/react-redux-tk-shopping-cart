@@ -1,15 +1,19 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import productList from "../data/productList.json";
 import "../styles/cart.scss";
+import { cartActions } from "../store/slices/cartSlice";
 
 const Cart = () => {
+  const dispatch = useDispatch();
   const { cartProductIDs } = useSelector((state) => state.cart);
   console.log("productList", productList);
   console.log("cartProductIDs", cartProductIDs);
   const selectedProducts = productList.products.filter((product) =>
     cartProductIDs.includes(product.id)
   );
-  const isCartEmpty = selectedProducts.length < 1;
+  const handleRemoveCard = (id) => {
+    dispatch(cartActions.removeFromCart(id));
+  };
   console.log("selectedProducts", selectedProducts);
   return (
     <div className="cart">
@@ -27,7 +31,10 @@ const Cart = () => {
               <div className="item-info">
                 <h4>{product.name}</h4>
                 <p className="text-truncate">{product.detail}</p>
-                <button className="btn btn-primary">
+                <button
+                  className="btn btn-primary"
+                  onClick={() => handleRemoveCard(product.id)}
+                >
                   <i className="bi bi-trash-fill" /> Remove Item
                 </button>
               </div>
