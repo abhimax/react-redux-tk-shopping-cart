@@ -1,6 +1,6 @@
 # React Redux Toolkit Shopping Cart
 
-This is a React project built with Vite and Redux Toolkit. It includes Redux slices for handling product data and cart actions.
+This React JS project, powered by Vite, leverages the efficiency of Redux Toolkit to manage state. It features meticulously crafted Redux slices for seamless handling of product data and cart actions. To simulate API interactions, Json Server is employed, while the asynchronous fetching of data is elegantly orchestrated through the use of Async Thunk.
 
 ![MY-OLO!](readme-res/abhimans-olo.png)
 
@@ -49,9 +49,10 @@ The cartSlice handles the state of the shopping cart, providing the following fe
 
 Feel free to explore and modify the slices based on your project's needs.
 
-## Acknowledgments
+## Tech Stack
 
-**_Vite_** - Blazing fast build tool for modern web development.
-React - A JavaScript library for building user interfaces.
-Redux Toolkit - The official, opinionated, batteries-included toolset for efficient Redux development.
-JSON Server - Get a full fake REST API with zero coding in less than 30 seconds (seriously).
+**Vite** - Blazing fast build tool for modern web development.
+**React** - A JavaScript library for building user interfaces.
+**Redux Toolkit** - The official, opinionated, batteries-included toolset for efficient Redux development.
+**JSON Server** - Get a full fake REST API with zero coding in less than 30 seconds (seriously).
+**SASS** - a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets
