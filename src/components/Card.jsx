@@ -3,15 +3,11 @@ import { cartActions } from "../store/slices/cartSlice";
 
 const Card = ({ id, name, price, imageUrl }) => {
   const dispatch = useDispatch();
-
   const { cartProductIDs } = useSelector((state) => state.cart);
-  console.log(cartProductIDs);
   const handleAddToCart = (id) => {
     dispatch(cartActions.addToCart(id));
-    console.log("ADD");
   };
   const handleRemoveFromCart = (id) => {
-    console.log("REMOVE");
     dispatch(cartActions.removeFromCart(id));
   };
   return (
